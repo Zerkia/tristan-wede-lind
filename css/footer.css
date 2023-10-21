@@ -1,0 +1,59 @@
+footer{
+    background-color: var(--colorBgMain);
+    color: var(--colorLink);
+    text-align: center;
+    font-family: var(--fontMain);
+    font-size: 13px;
+}
+
+.kea-publishing {
+    padding:0.5rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kea-publishing img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding-right: 0.25rem;
+}
+
+.kea-publishing span{
+    margin: 0;
+}
+
+
+.socials{
+    display:inline-block;
+    padding-bottom: 1rem;
+}
+
+.socials img{
+    border-radius: 50%;
+    max-width: 35px;
+    width: 100%;
+}
+
+.legal{
+    padding-bottom: 1rem;
+}
+
+.legal a{
+    display:block;
+    color: var(--colorLink);
+}
+
+.credits p{
+    color: var(--colorSecondary);
+}
+
+.credits a{
+    color: var(--colorLink);
+}
+
+.footer-copyright{
+    color: var(--colorSecondary);
+    padding:1rem 0 0.5rem;
+}

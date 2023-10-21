@@ -1,0 +1,52 @@
+.book-card-container{
+    background-color: var(--colorLink);
+}
+
+.book-card{
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px var(--colorSecondary) solid;
+}
+
+.book-card:last-of-type{
+    border:none;
+}
+
+.book-image{
+    display:block;
+    margin: 0 auto 1rem auto;
+    max-width: 156px;
+    width: 100%;
+}
+
+.book-title, .book-subtitle, .book-year, .book-description{
+    font-family: var(--fontMain);
+}
+
+.book-title{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.book-subtitle{
+    display:inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 1rem;
+}
+
+.book-year:before{
+    content: "(";
+}
+
+.book-year{
+    display: inline-block;
+}
+
+.book-year:after{
+    content: ")";
+}
+
+.book-description{
+    line-height: 150%;
+}

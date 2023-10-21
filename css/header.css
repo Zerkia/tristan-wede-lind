@@ -1,0 +1,31 @@
+
+
+header .center{
+    text-align: center;
+}
+
+.language{
+    padding: 0;
+    margin-left: 7%;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    height: 1.75rem;
+    width: 2.75rem;
+    align-items: center;
+}
+
+nav{
+    background-color: var(--colorBgSecondary);
+}
+
+nav ul li{
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px var(--colorSecondary) solid;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+nav ul li a{
+    color: var(--colorLink);
+}

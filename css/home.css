@@ -1,0 +1,78 @@
+.new-release{
+    background-color: var(--colorSecondary);
+    padding-top: 0.5rem;
+}
+
+.new-release-title, .release-title, .release-copyright{
+    font-family: var(--fontMain);
+    text-align: center;
+}
+
+.new-release-title{
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--colorCTA);
+    color: var(--colorLink);
+    font-size: 18px;
+}
+
+.release-title{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 0.5rem;
+}
+
+.release-copyright{
+    font-size: 18px;
+    padding-bottom: 0.75rem;
+}
+
+.release-image{
+    /* some day centering an image via text in a block container will make sense to me. */
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.release-image img{
+    padding: 0.6rem;
+    background-color: var(--colorLink);
+    border-radius: 10px;
+    max-width: 240px;
+}
+
+.tristan-bio{
+    background-color: var(--colorLink);
+    text-align: left;
+    padding: 1.5rem 2rem 0 2rem;
+}
+
+.tristan-bio p{
+    padding-bottom: 1rem;
+    font-family: var(--fontMain);
+}
+
+.tristan-bio blockquote{
+    padding-bottom: 0;
+}
+
+.tristan-quote{
+    background-color: var(--colorBgSecondary);
+    text-align:center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom:1rem;
+}
+
+.tristan-quote p{
+    color: var(--colorLink);
+    font-style: italic;
+}
+
+.quote-source{
+    text-align: right;
+    font-style: normal !important;
+}
+

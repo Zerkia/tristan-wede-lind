@@ -1,0 +1,39 @@
+.tour-pic{
+    padding: 1rem 1rem 0 1rem;
+}
+
+.tour-pic img{
+    width: 100%;
+}
+
+.tour-card-container{
+    background-color: var(--colorLink);
+}
+
+.tour-card{
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px var(--colorSecondary) solid;
+}
+
+.tour-card:last-of-type{
+    border:none !important;
+}
+
+.tour-card p{
+    font-family: var(--fontMain);
+}
+
+.tour-date:before{
+    content: url(../img/microphone.png) " ";
+}
+
+.tour-title{
+    color: var(--colorBgMain);
+    font-weight: bold;
+}
+
+.tour-person{
+    color: var(--colorCTA);
+    font-weight:bold;
+}
