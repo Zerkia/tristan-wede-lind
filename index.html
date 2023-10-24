@@ -13,18 +13,20 @@
 </head>
 <body>
     <header>
-        <div class="header-tristan">
-            <img class="lind" src="img/lind.png" alt="Tristan head" loading="lazy">
-        </div>
-        <div class="center">
-            <h1>Tristan Wede Lind</h1>
-            <h2>Web Developer and Author</h2>
-        </div>
-        <div class="options">
-            <select name="language" class="language">
-                <option value="en">EN</option>
-                <option value="dk">DK</option>
-            </select>
+        <div>
+            <div class="header-tristan">
+                <img class="lind" src="img/lind.png" alt="Tristan head" loading="lazy">
+            </div>
+            <div class="header-title">
+                <h1>Tristan Wede Lind</h1>
+                <h2>Web Developer and Author</h2>
+            </div>
+            <div class="options">
+                <select name="language" class="language">
+                    <option value="en">EN</option>
+                    <option value="dk">DK</option>
+                </select>
+            </div>
         </div>
         <nav>
             <ul>
@@ -38,117 +40,168 @@
     <main>
         <article id="home">
             <section class="new-release">
-                <div class="new-release-title">
-                    New Release
-                </div>
-                <br>
-                <div class="release-title">
-                    Advanced PHP: From Zero to Hero
-                </div>
-                <div class="release-copyright">
-                    &copy; 2023 KEA Publishing
+                <div class="new-release-flex">
+                    <div class="new-release-title">
+                        New Release
+                    </div>
+                    <br>
+                    <div class="release-book-title">
+                        Advanced PHP: From Zero to Hero
+                    </div>
+                    <div class="release-copyright">
+                        &copy; 2023 KEA Publishing
+                    </div>
                 </div>
                 <div class="release-image">
                     <img src="img/book_php_preview.png" alt="Advanced PHP From Zero to Hero" loading="lazy">
                 </div>
             </section>
             <section class="tristan-bio">
-                <p>A Copenhagen native, Tristan Wede Lind has established himself as a leading authority in web development, captivating audiences worldwide with his profound knowledge of various technologies and methodologies. With a career spanning over two decades, Lind has honed his skills working for industry giants, where he contributed to cutting-edge projects that pushed the boundaries of web development.</p>
-                <p>Lind's latest achievements showcase his commitment to advancing the field. Through meticulous research and hands-on experience, he has developed novel approaches to web design, user experience optimization, and responsive development, ensuring that websites and applications deliver immersive and intuitive experiences across devices.</p>
-                <p>As an accomplished author, Lind has authored numerous critically acclaimed books that serve as essential guides for aspiring web developers and industry professionals alike. His publications, revered for their clarity, depth, and practicality, have garnered widespread acclaim and have been translated into multiple languages, solidifying his reputation as an influential figure in the global web development community.</p>
-                <blockquote class="tristan-quote">
-                    <p>Tristan Wede Lind's books on web development are an invaluable resource for both novices and seasoned professionals. His comprehensive yet accessible approach demystifies complex concepts, providing practical guidance that translates directly into real-world success. Lind's expertise shines through in every page, making his works an indispensable addition to any developer's library.</p>
-                    <p class="quote-source">The Tech Tribune</p>
-                </blockquote>
-                <p>In addition to his professional accomplishments, Lind is known for his dedication to sharing his expertise through conferences, workshops, and online platforms. As a sought-after speaker, he has enlightened audiences with his insightful talks, empowering developers to embrace emerging technologies and adapt to the ever-evolving digital landscape.</p>
-                <br>
+                <div class="bio-left">
+                    <p>A Copenhagen native, Tristan Wede Lind has established himself as a leading authority in web development, captivating audiences worldwide with his profound knowledge of various technologies and methodologies. With a career spanning over two decades, Lind has honed his skills working for industry giants, where he contributed to cutting-edge projects that pushed the boundaries of web development.</p>
+                    <p>Lind's latest achievements showcase his commitment to advancing the field. Through meticulous research and hands-on experience, he has developed novel approaches to web design, user experience optimization, and responsive development, ensuring that websites and applications deliver immersive and intuitive experiences across devices.</p>
+                    <p>As an accomplished author, Lind has authored numerous critically acclaimed books that serve as essential guides for aspiring web developers and industry professionals alike. His publications, revered for their clarity, depth, and practicality, have garnered widespread acclaim and have been translated into multiple languages, solidifying his reputation as an influential figure in the global web development community.</p>
+                    <blockquote class="tristan-quote">
+                        <p>Tristan Wede Lind's books on web development are an invaluable resource for both novices and seasoned professionals. His comprehensive yet accessible approach demystifies complex concepts, providing practical guidance that translates directly into real-world success. Lind's expertise shines through in every page, making his works an indispensable addition to any developer's library.</p>
+                        <p class="quote-source">The Tech Tribune</p>
+                    </blockquote>
+                    <p>In addition to his professional accomplishments, Lind is known for his dedication to sharing his expertise through conferences, workshops, and online platforms. As a sought-after speaker, he has enlightened audiences with his insightful talks, empowering developers to embrace emerging technologies and adapt to the ever-evolving digital landscape.</p>
+                    <br>
+                </div>
+                <div class="bio-right">
+                    <div class="bio-card-container">
+                        <div class="bio-card">
+                            <img src="img/book_css.png">
+                            <h4>CSS for Developers</h4>
+                            <h5>A Visual Journey</h5>
+                            <p>2022</p>
+                        </div>
+                        <div class="bio-card">
+                            <img src="img/book_html.png">
+                            <h4>Semantic HTML</h4>
+                            <h5>Foundation of the Web</h5>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                    <div class="bio-card-container">
+                        <div class="bio-card">
+                            <img src="img/book_js.png">
+                            <h4>Advanced JavaScript</h4>
+                            <h5>Frameworkless</h5>
+                            <p>2021</p>
+                        </div>
+                        <div class="bio-card">
+                            <img src="img/book_programming.png">
+                            <h4>Basic Programming</h4>
+                            <h5>Algorithms and Beyond</h5>
+                            <p>2017</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
         <article id="tour">
             <section class="section-title">
                 <h2>On tour</h2>
             </section>
-            <section class="tour-card-container">
+            <section>
                 <div class="tour-pic">
                     <img src="img/tristan_640.jpg" alt="Tristan giving a speech" loading="lazy">
+                    <img src="img/tristan_1280.jpg" alt="Tristan giving a speech" loading="lazy">
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2023, December 6-8</p>
-                    <p class="tour-title">WebTech Summit</p>
-                    <p class="tour-person">Keynote Speaker</p>
-                    <p class="tour-location">San Francisco, CA (Moscone Center)</p>
+            </section>
+            <section class="tour-card-container">
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2023, December 6-8</p>
+                        <p class="tour-title">WebTech Summit</p>
+                        <p class="tour-person">Keynote Speaker</p>
+                        <p class="tour-location">San Francisco, CA (Moscone Center)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2023, December 12</p>
+                        <p class="tour-title">Workshop "Responsive Design Strategies for Modern Websites"</p>
+                        <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2023, December 12</p>
-                    <p class="tour-title">Workshop "Responsive Design Strategies for Modern Websites"</p>
-                    <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, January 15-17</p>
+                        <p class="tour-title">Developer's Paradise Conference</p>
+                        <p class="tour-person">Panelist</p>
+                        <p class="tour-location">Miami, FL (Miami Convention Center)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, January 22-23</p>
+                        <p class="tour-title">CodeCraft Workshop</p>
+                        <p class="tour-person">Guest Instructor</p>
+                        <p class="tour-location">New York City, NY (TBD)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, January 15-17</p>
-                    <p class="tour-title">Developer's Paradise Conference</p>
-                    <p class="tour-person">Panelist</p>
-                    <p class="tour-location">Miami, FL (Miami Convention Center)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, February 5-6</p>
+                        <p class="tour-title">Design & Develop Summit</p>
+                        <p class="tour-person">Featured Speaker</p>
+                        <p class="tour-location">Austin, TX (Austin Convention Center)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, February 15</p>
+                        <p class="tour-title">Workshop "Advanced JavaScript Techniques"</p>
+                        <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, January 22-23</p>
-                    <p class="tour-title">CodeCraft Workshop</p>
-                    <p class="tour-person">Guest Instructor</p>
-                    <p class="tour-location">New York City, NY (TBD)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, March 10-12</p>
+                        <p class="tour-title">WebMasters Expo</p>
+                        <p class="tour-person">Keynote Speaker</p>
+                        <p class="tour-location">Las Vegas, NV (Las Vegas Convention Center)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, March 18</p>
+                        <p class="tour-title">Workshop "Mastering CSS Grid Layouts"</p>
+                        <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, February 5-6</p>
-                    <p class="tour-title">Design & Develop Summit</p>
-                    <p class="tour-person">Featured Speaker</p>
-                    <p class="tour-location">Austin, TX (Austin Convention Center)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, April 5</p>
+                        <p class="tour-title">Workshop "Optimizing Performance in Web Applications</p>
+                        <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, 19-20</p>
+                        <p class="tour-title">Frontend Focus Conference</p>
+                        <p class="tour-person">Panel Moderator</p>
+                        <p class="tour-location">Seattle, WA (Washington State Convention Center)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, February 15</p>
-                    <p class="tour-title">Workshop "Advanced JavaScript Techniques"</p>
-                    <p class="tour-location">Copenhagen, Denmark (TBD)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, May 8-9</p>
+                        <p class="tour-title">Developer's Summit</p>
+                        <p class="tour-person">Featured Speaker</p>
+                        <p class="tour-location">Chicago, IL (McCormick Place)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, 15-16</p>
+                        <p class="tour-title">WebTech Summit</p>
+                        <p class="tour-person">Keynote Speaker</p>
+                        <p class="tour-location">Boston, MA (Hynes Convention Center)</p>
+                    </div>
                 </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, March 10-12</p>
-                    <p class="tour-title">WebMasters Expo</p>
-                    <p class="tour-person">Keynote Speaker</p>
-                    <p class="tour-location">Las Vegas, NV (Las Vegas Convention Center)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, March 18</p>
-                    <p class="tour-title">Workshop "Mastering CSS Grid Layouts"</p>
-                    <p class="tour-location">Copenhagen, Denmark (TBD)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, April 5</p>
-                    <p class="tour-title">Workshop "Optimizing Performance in Web Applications</p>
-                    <p class="tour-location">Copenhagen, Denmark (TBD)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, 19-20</p>
-                    <p class="tour-title">Frontend Focus Conference</p>
-                    <p class="tour-person">Panel Moderator</p>
-                    <p class="tour-location">Seattle, WA (Washington State Convention Center)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, May 8-9</p>
-                    <p class="tour-title">Developer's Summit</p>
-                    <p class="tour-person">Featured Speaker</p>
-                    <p class="tour-location">Chicago, IL (McCormick Place)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, 15-16</p>
-                    <p class="tour-title">WebTech Summit</p>
-                    <p class="tour-person">Keynote Speaker</p>
-                    <p class="tour-location">Boston, MA (Hynes Convention Center)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, June 6</p>
-                    <p class="tour-title">Workshop "Building Progressive Web Apps"</p>
-                    <p class="tour-location">Copenhagen, Denmark (Den Sorte Diamant)</p>
-                </div>
-                <div class="tour-card">
-                    <p class="tour-date">2024, June 20</p>
-                    <p class="tour-title">Workshop "Mastering React: Best Practices and Advanced Techniques"</p>
-                    <p class="tour-location">Aarhus, Denmark (TBD)</p>
+                <div class="tour-card-row">
+                    <div class="tour-card">
+                        <p class="tour-date">2024, June 6</p>
+                        <p class="tour-title">Workshop "Building Progressive Web Apps"</p>
+                        <p class="tour-location">Copenhagen, Denmark (Den Sorte Diamant)</p>
+                    </div>
+                    <div class="tour-card">
+                        <p class="tour-date">2024, June 20</p>
+                        <p class="tour-title">Workshop "Mastering React: Best Practices and Advanced Techniques"</p>
+                        <p class="tour-location">Aarhus, Denmark (TBD)</p>
+                    </div>
                 </div>
             </section>
             <section class="top">

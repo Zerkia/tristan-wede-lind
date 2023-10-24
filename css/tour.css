@@ -2,8 +2,13 @@
     padding: 1rem 1rem 0 1rem;
 }
 
-.tour-pic img{
+.tour-pic img:last-of-type{
+    display:none;
+}
+
+.tour-pic img:first-of-type{
     width: 100%;
+    max-width: 300px;
 }
 
 .tour-card-container{
@@ -16,8 +21,8 @@
     border-bottom: 1px var(--colorSecondary) solid;
 }
 
-.tour-card:last-of-type{
-    border:none !important;
+.tour-card-row:last-of-type .tour-card:last-of-type{
+    border:none;
 }
 
 .tour-card p{
@@ -36,4 +41,53 @@
 .tour-person{
     color: var(--colorCTA);
     font-weight:bold;
+}
+
+@media (min-width: 1200px) {
+    .tour-pic img:first-of-type{
+        display:none;
+    }
+
+    .tour-pic img:last-of-type{
+        display:block;
+        width: 100%;
+        max-width: 1248px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .tour-card-container{
+        display:flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .tour-card-row{
+        display:flex;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .tour-card{
+        flex: 1;
+        border: 1px solid var(--colorSecondary);
+        border-radius: 10px;
+        margin: 0;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+
+    .tour-card-row .tour-card:first-of-type{
+        margin-right: 0.5rem
+    }
+    .tour-card-row .tour-card:last-of-type{
+        margin-left: 0.5rem
+    }
+
+    .tour-card-row:last-of-type .tour-card:last-of-type{
+        border: 1px solid var(--colorSecondary);
+    }
+
+    .tour-card-row:last-of-type{
+        padding-bottom: 0;
+    }
 }

@@ -1,16 +1,16 @@
 .new-release{
     background-color: var(--colorSecondary);
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
-.new-release-title, .release-title, .release-copyright{
+.new-release-title, .release-book-title, .release-copyright{
     font-family: var(--fontMain);
     text-align: center;
 }
 
 .new-release-title{
     padding: 0.5rem;
-    width: 50%;
+    width: 12rem;
     border-radius: 10px;
     text-transform: uppercase;
     background-color: var(--colorCTA);
@@ -18,7 +18,7 @@
     font-size: 18px;
 }
 
-.release-title{
+.release-book-title{
     font-style: italic;
     font-weight: bold;
     font-size: 22px;
@@ -33,14 +33,15 @@
 .release-image{
     /* some day centering an image via text in a block container will make sense to me. */
     text-align: center;
-    padding-bottom: 0.5rem;
 }
 
 .release-image img{
     padding: 0.6rem;
     background-color: var(--colorLink);
     border-radius: 10px;
-    max-width: 240px;
+    max-width: 130px;
+    width: 100%;
+    height: auto;
 }
 
 .tristan-bio{
@@ -49,20 +50,20 @@
     padding: 1.5rem 2rem 0 2rem;
 }
 
+.bio-right{
+    display:none;
+}
+
 .tristan-bio p{
     padding-bottom: 1rem;
     font-family: var(--fontMain);
-}
-
-.tristan-bio blockquote{
-    padding-bottom: 0;
 }
 
 .tristan-quote{
     background-color: var(--colorBgSecondary);
     text-align:center;
     border-radius: 10px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0 1rem;
     margin-bottom:1rem;
 }
 
@@ -74,5 +75,72 @@
 .quote-source{
     text-align: right;
     font-style: normal !important;
+}
+
+@media (min-width: 1200px) {
+    .new-release{
+        display:flex;
+    }
+
+    .new-release-flex{
+        flex: 4;
+    }
+
+    .new-release-title{
+        padding: 0.75rem;
+        width: 20rem;
+        margin-top:0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .release-book-title{
+        font-size: 24px;
+    }
+
+    .release-copyright{
+        font-size: 16px;
+    }
+
+    .release-image{
+        flex: 1;
+        justify-content: flex-end;
+        display:flex;
+        padding-right: 1rem;
+    }
+
+    .release-image img{
+        margin: 0;
+        max-width: 120px;
+    }
+
+    .tristan-bio{
+        display:flex;
+        padding: 1rem 0 0 2rem;
+    }
+
+    .bio-left{
+        flex: 2;
+    }
+
+    .bio-right{
+        flex: 1;
+        display:block;
+    }
+
+    .bio-card-container{
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .bio-card{
+        margin: 0;
+        text-align: center;
+    }
+
+    .bio-card img{
+        width: 100%;
+        height: auto;
+        max-width: 156px;
+    }
 }
 
