@@ -1,3 +1,5 @@
+/* everything css that is used on multiple sections of the page (home, tour etc.) */
+
 *{
     margin: 0 auto;
     padding: 0;
@@ -37,6 +39,8 @@ a{
     padding-right: 3rem;
     padding-bottom: 0.25rem;
 }
+
+/* DESKTOP VIEW */
 
 @media (min-width: 1200px) {
     *{

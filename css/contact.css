@@ -1,3 +1,8 @@
+/* Everything in the article with class name "home" */
+
+/* Contact people and form, conference picture hidden on mobile view */
+/* Shown in block display */
+
 .contact{
     padding-bottom: 1rem;
 }
@@ -6,14 +11,18 @@
     background-color: var(--colorLink);
 }
 
+.contact-card-row:last-of-type{
+    display: none;
+}
+
 .contact-card{
     margin: 0 1rem;
     padding: 1rem 0;
     border-bottom: 1px var(--colorSecondary) solid;
 }
 
-.contact-card:last-of-type{
-    border:none;
+.contact-card-container article:last-of-type .contact-card:last-of-type{
+    border: none;
 }
 
 .contact-name, .contact-name, .contact-title, .contact-email, .contact-phone{
@@ -22,9 +31,16 @@
 
 .contact-image{
     border-radius: 50%;
-    width: 45%;
     display:block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 128px;
+    height: auto;
+    max-height: 128px;
+}
+
+.contact-image:last-of-type{
+    height: 128px;
 }
 
 .contact-name{
@@ -49,8 +65,7 @@
 }
 
 form{
-    background-color: var(--colorLink);
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 form fieldset{
@@ -60,6 +75,7 @@ form fieldset{
     font-family: var(--fontMain);
     margin: 0 1rem;
 }
+
 form legend{
     margin: 0;
     padding:0 2px;
@@ -84,7 +100,7 @@ form textarea{
 }
 
 form input[type=submit]{
-    width: 33%;
+    width: 5rem;
     height: 3rem;
     border-radius: 10px;
     font-family: var(--fontMain);
@@ -94,4 +110,65 @@ form input[type=submit]{
 
 #contact .top{
     padding-bottom: 1rem;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 1200px) {
+
+    /* Display changed to flex to accomodate conference pic that is now shown */
+    /* borders also changed to encompass contact people and to maintain an easy way */
+    /* of knowing who to book with */
+    
+    .contact-card-container{
+        display: flex;
+        padding: 1rem;
+    }
+
+    .contact-card{
+        margin: 0;
+        padding: 0;
+        border: 1px var(--colorSecondary) solid;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    .contact-card .contact-image{
+        flex: 1/5;
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .contact-card .contact-info{
+        flex: 4/5;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    .contact-card-row:first-of-type{
+        flex: 6;
+        margin-right: 0.5rem;
+    }
+
+    .contact-card-row:last-of-type{
+        flex: 4;
+        display: block;
+        margin-left: 0.5rem;
+    }
+
+    .contact-card-row article:first-of-type{
+        padding-bottom: 1rem;
+    }
+
+    .contact-card-row article:last-of-type{
+        border: 1px var(--colorSecondary) solid;
+        border-radius: 10px;
+    }
+
+    .contact-conference{
+        max-width: 500px;
+        max-height: 680px;
+        width: 100%;
+        height: auto;    
+    }
 }

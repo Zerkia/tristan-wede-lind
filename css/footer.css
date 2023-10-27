@@ -1,3 +1,7 @@
+/* Everything in the article with class name "home" */
+
+/* Everything displayed in block, flex displayed on kea publishing elements */
+
 footer{
     background-color: var(--colorBgMain);
     color: var(--colorLink);
@@ -14,7 +18,8 @@ footer{
 }
 
 .kea-publishing img {
-    max-width: 100%;
+    max-width: 69px;
+    width: 100%;
     height: auto;
     margin: 0;
     padding-right: 0.25rem;
@@ -23,7 +28,6 @@ footer{
 .kea-publishing span{
     margin: 0;
 }
-
 
 .socials{
     display:inline-block;
@@ -56,4 +60,61 @@ footer{
 .footer-copyright{
     color: var(--colorSecondary);
     padding:1rem 0 0.5rem;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 1200px) {
+
+    /* Display changed to flex with space between */
+    /* Also slight text alignment changes to accodomate desktop space better */
+
+    .footer-desktop{
+        display:flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .footer-desktop div, .footer-desktop article{
+        margin: 0;
+    }
+
+    .footer-desktop article, .footer-desktop > div{
+        flex: 1;
+    }
+
+    .kea-publishing{
+        display:block;
+        text-align: left;
+        padding: 0 0 2rem 0.5rem;
+    }
+
+    .kea-publishing span{
+        display:block;
+    }
+
+    .socials{
+        /* removes bottom padding from mobile first view also */
+        padding: 0 0 0 0.5rem;
+
+        /* for some very weird reason, the text-align center on my footer global tag */
+        /* refuses to be overwritten in desktop mode no matter what I do, so I had to */
+        /* make a weird cheap fix with flex, very annoying to figure out */
+        display:flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .socials a{
+        margin: 0;
+        padding-right: 0.25rem;
+    }
+    
+    .socials img{
+        margin: 0;
+    }
+
+    .credits{
+        text-align: right;
+    }
 }

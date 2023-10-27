@@ -1,3 +1,7 @@
+/* Everything in the article with class name "books" */
+
+/* Books shown in a block display */
+
 .book-card-container{
     background-color: var(--colorLink);
 }
@@ -8,7 +12,7 @@
     border-bottom: 1px var(--colorSecondary) solid;
 }
 
-.book-card:last-of-type{
+.book-card-row:last-of-type .book-card:last-of-type{
     border:none;
 }
 
@@ -49,4 +53,56 @@
 
 .book-description{
     line-height: 150%;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 1200px) {
+
+    /* Books now shown in a flex display, border now fully encompassing similar to tour dates */
+    
+    .book-card-container{
+        padding: 1rem;
+    }
+
+    .book-card-row{
+        display:flex;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .book-card{
+        flex: 1;
+        border: 1px solid var(--colorSecondary);
+        border-radius: 10px;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .book-card-row .book-card:first-of-type{
+        margin-right: 0.5rem
+    }
+    .book-card-row .book-card:last-of-type{
+        margin-left: 0.5rem
+    }
+
+    .book-card-row:last-of-type .book-card:last-of-type{
+        border: 1px solid var(--colorSecondary);
+    }
+
+    .book-card-row:last-of-type{
+        padding-bottom: 0;
+    }
+
+    /* Originally I only had text-align: left here */
+    /* The massive padding is due to how bad float is. */
+    .book-card p:last-of-type{
+        text-align: left;
+        padding-right:11rem;
+    }
+
+    .book-card img{
+        float:right;
+    }
 }

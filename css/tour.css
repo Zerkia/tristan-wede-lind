@@ -1,3 +1,7 @@
+/* Everything in the article with class name "tour" */
+
+/* Small pic of Tristan on mobile view, block display of events */
+
 .tour-pic{
     padding: 1rem 1rem 0 1rem;
 }
@@ -43,7 +47,13 @@
     font-weight:bold;
 }
 
+/* DESKTOP VIEW */
+
 @media (min-width: 1200px) {
+
+    /* Bigger pic of Tristan on desktop view & block -> flex display of events */
+    /* border also changed to encompass fully */
+
     .tour-pic img:first-of-type{
         display:none;
     }
